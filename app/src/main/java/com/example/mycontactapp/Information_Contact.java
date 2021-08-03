@@ -140,7 +140,7 @@ public class Information_Contact extends AppCompatActivity {
                 if(contactId==-1){
                     res= dba.insertContact(c);
                     if(res){
-                        Toast.makeText(this,"car added succefully",Toast.LENGTH_LONG).show();
+                        Toast.makeText(this,"contact added succefully",Toast.LENGTH_LONG).show();
                         setResult(ADD_CONTACT_RES_CODE,null);
                         finish();
                     }
@@ -148,7 +148,7 @@ public class Information_Contact extends AppCompatActivity {
                 else {
                     res=dba.updateContact(c);
                     if(res){
-                        Toast.makeText(this,"car modify succefully",Toast.LENGTH_LONG).show();
+                        Toast.makeText(this,"contact modify succefully",Toast.LENGTH_LONG).show();
                         setResult(EDIT_CONTACT_RES_CODE,null);
                         finish();
                     }
@@ -170,7 +170,7 @@ public class Information_Contact extends AppCompatActivity {
 
                     res= dba.deleteContact(c);
                    if(res){
-                   Toast.makeText(this,"car delete succesfully",Toast.LENGTH_LONG).show();
+                   Toast.makeText(this,"contact delete succesfully",Toast.LENGTH_LONG).show();
                    setResult(EDIT_CONTACT_RES_CODE,null);
                    finish();}
 

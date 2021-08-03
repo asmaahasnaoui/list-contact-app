@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},PERM_REQ_CODE);
         }
         tb=findViewById(R.id.tb);
+        tb.setTitle("");
         setSupportActionBar(tb);
         rv=findViewById(R.id.rv);
         fab=findViewById(R.id.fab);
@@ -66,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager lm=new LinearLayoutManager(this);
         rv.setLayoutManager(lm);
         rv.setHasFixedSize(true);
+        rv.animate();
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

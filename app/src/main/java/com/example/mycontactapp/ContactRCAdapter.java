@@ -49,7 +49,7 @@ public class ContactRCAdapter extends RecyclerView.Adapter<ContactRCAdapter.Cont
     @Override
     public void onBindViewHolder(@NonNull ContactViewHolder holder, int position) {
         Contact c=contacts.get(position);
-        if(c.getImage() !=null && c.getImage().isEmpty())
+        if(c.getImage() !=null && !c.getImage().isEmpty())
         holder.imge.setImageURI(Uri.parse(c.getImage()));
         else{
             holder.imge.setImageResource(R.drawable.profilepng);

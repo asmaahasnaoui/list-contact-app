@@ -39,7 +39,7 @@ public class DatabaseAccess {
         values.put(MyDatabase.CONTACT_CLN_PHONE,contact.getPhone());
         values.put(MyDatabase.CONTACT_CLN_IMAGE,contact.getImage());
 
-        long result=database.insert(MyDatabase.CONTACT_CLN_NAME,null,values);
+        long result=database.insert(MyDatabase.CONTACT_TB_NAME,null,values);
         return result !=-1;
 
 
